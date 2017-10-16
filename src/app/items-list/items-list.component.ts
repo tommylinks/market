@@ -15,13 +15,24 @@ export class ItemsListComponent implements OnInit{
 
     title = 'Список товаров';
 
+    cartList = [];
+    cartCount: number = 0;
+
     constructor( private dbSevice: DbService, private router: Router ){}
 
     items: Item[];
 
     goDetail(id) {
-        // this.dbSevice.getById(id).subscribe( data => console.log(data[0]));
         this.router.navigate(['detail', id])
+    }
+
+    addToCart(item){
+
+        this.cartList.push( item );
+
+        this.cartCount++;
+
+        console.log(this.cartList);
     }
 
 

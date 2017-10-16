@@ -6,23 +6,17 @@ import 'rxjs/add/operator/filter';
 
 @Injectable()
 export class DbService {
-    data;
 
-    array;
 
-    result;
 
     constructor( private http: Http) {}
 
     getData() {
-
-        this.data = this.http.get('db.json');
-        return this.data;
+        return this.http.get('http://localhost:2403/items');
     }
 
     getById(id) {
-        return this.data.map( item => item.json().filter( item => item.id == id) );
-
+        return this.http.get('http://localhost:2403/items').map( item => item.json().filter( item => item.id == id));
     }
 
 }

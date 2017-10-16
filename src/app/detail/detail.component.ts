@@ -4,6 +4,8 @@ import { ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs/Subscription';
 import {Item} from "../shared/item";
 
+
+
 @Component({
     selector: 'app-detail',
     templateUrl: './detail.component.html',
@@ -13,20 +15,15 @@ export class DetailComponent implements OnDestroy, OnInit{
 
     id:number;
     private subscription: Subscription;
-    item: Item;
+    public item = [];
 
 
     constructor(private dbSevice: DbService, private activateRoute: ActivatedRoute){
         this.subscription = activateRoute.params.subscribe(params=>this.id=params['id']);
-
-        this.dbSevice.getById(this.id).subscribe( data => this.item = data[0]);
-        console.log(this.item);
-        console.log(this.id);
     }
 
     ngOnInit() {
-
-
+        this.dbSevice.getById(this.id).subscribe( (data) => this.item = data[0]);
     }
 
     ngOnDestroy(){

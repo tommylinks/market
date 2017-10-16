@@ -20,6 +20,7 @@ const routs: Routes = [
     {path: "login", component: LoginComponent},
     {path: "catalog", component: ItemsListComponent, canActivate: [AuthGuardService]},
     {path: "detail/:id", component: DetailComponent},
+
     {path: "", redirectTo: '/login', pathMatch: 'full'},
     {path: "**", redirectTo: '/login'}
 
