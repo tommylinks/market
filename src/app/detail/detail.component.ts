@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from "@angular/core";
-import { DbService } from "../serice/db.service";
+import { DbService } from "../service/db.service";
 import { ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs/Subscription';
 import {Item} from "../shared/item";

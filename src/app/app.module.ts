@@ -12,9 +12,9 @@ import {ItemsListComponent} from "./items-list/items-list.component";
 import { DetailComponent } from './detail/detail.component'
 import {LoginComponent} from "./login/login.component";
 
-import {AuthGuardService} from "./serice/auth-guard.service";
-import {AuthService} from "./serice/auth.service";
-import {DbService} from "./serice/db.service";
+import {AuthGuardService} from "./service/auth-guard.service";
+import {AuthService} from "./service/auth.service";
+import {DbService} from "./service/db.service";
 
 const routs: Routes = [
     {path: "login", component: LoginComponent},

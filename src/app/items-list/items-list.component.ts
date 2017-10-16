@@ -4,7 +4,7 @@ import {Router} from "@angular/router";
 
 import { Response } from "@angular/http";
 
-import { DbService } from "../serice/db.service";
+import { DbService } from "../service/db.service";
 
 @Component({
     selector: 'items-list',
