@@ -1,0 +1,10 @@
+img {
+    height: auto;
+    max-height: 150px;
+}
+
+.col-md-3:nth-child(5n){
+    display: table;
+    content: " ";
+    clear: both;
+}

@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"category": "phone",
+		"name": "Iphone 7",
+		"img": "https://i2.rozetka.ua/goods/2162160/copy_apple_fkqj2rm_a_599ff4704cb72_images_2162160246.jpg",
+		"price": 4500
+	},
+	{
+		"id": 2,
+		"category": "phone",
+		"name": "Samsung Galaxy S8",
+		"img": "https://i2.rozetka.ua/goods/1460283/samsung_galaxy_s7_edge_32gb_black_images_1460283562.jpg",
+		"price": 5000
+	},
+	{
+		"id": 3,
+		"category": "laptop",
+		"name": "Acer K233",
+		"img": "https://i2.rozetka.ua/goods/2136800/copy_acer_nh_gm2eu_018_598c471fc568c_images_2136800583.jpg",
+		"price": 7000
+	},
+	{
+		"id": 4,
+		"category": "laptop",
+		"name": "Macbook PRO",
+		"img": "https://i1.rozetka.ua/goods/1867298/copy_apple_a1707_macbook_pro_tb_15_mlh42ua_a_58aeb6b41d398_images_1867298108.jpg",
+		"price": 17000
+	},
+	{
+		"id": 5,
+		"category": "watch",
+		"name": "Aple Watch",
+		"img": "https://i1.rozetka.ua/goods/2122449/apple_mnj22zm_a_images_2122449763.jpg",
+		"price": 2000
+	}
+]

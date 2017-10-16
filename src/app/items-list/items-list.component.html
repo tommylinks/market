@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>{{title}}</h1>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let item of items" >
+            <div class="thumbnail">
+                <img src="{{ item.img }}" alt="...">
+                <div class="caption">
+
+                    <h3>{{ item.name }}</h3>
+                    <p class="geo" > Category: {{ item.category }}</p>
+                    <hr>
+                    <p class="text-center">
+                        <button  class="btn btn-default" role="button" (click)="goDetail(item.id)">Подробнее</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

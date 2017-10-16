@@ -1,0 +1,11 @@
+<div class="modal-dialog">
+    <div class="loginmodal-container">
+        <h1>Login to Your Account</h1><br>
+        <form>
+            <div *ngIf="errorForm" class="text-red"> ERROR: Invalid username or password </div>
+            <input type="text" placeholder="Username"  name="name" [(ngModel)]="userLogin">
+            <input type="password" placeholder="Password" name="pass" [(ngModel)]="userPassword">
+            <button class="login loginmodal-submit" (click)="login()">Login</button>
+        </form>
+    </div>
+</div>
